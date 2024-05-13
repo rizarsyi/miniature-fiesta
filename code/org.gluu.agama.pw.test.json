@@ -1,0 +1,172 @@
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 123,
+			"id": "finish-a051b7bb-abc3-409e-9b59-157f2885bec0",
+			"position": {
+				"x": 430,
+				"y": 30
+			},
+			"type": "finish",
+			"data": {
+				"id": "finish-a051b7bb-abc3-409e-9b59-157f2885bec0",
+				"type": "Agama-finish-Flow",
+				"parentId": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"handles": [],
+				"position": {
+					"x": 430,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "finish-a051b7bb-abc3-409e-9b59-157f2885bec0",
+					"parentId": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+					"type": "Agama-finish-Flow",
+					"hasSuccess": false,
+					"hasFailure": false,
+					"hasComment": true,
+					"comment": "",
+					"flowfilename": "",
+					"returnVariable": "{ userId: \"as9233Qz\", property1: \"value1\"}",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				},
+				"skake": false
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 430,
+				"y": 30
+			}
+		},
+		{
+			"width": 168,
+			"height": 120,
+			"id": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+			"position": {
+				"x": 230,
+				"y": 30
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 230,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+					"parentId": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+					"type": "Agama-log-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"just testing\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				},
+				"skake": true
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 230,
+				"y": 30
+			}
+		},
+		{
+			"width": 170,
+			"height": 123,
+			"id": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 30,
+					"y": 30
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+					"type": "Agama-start-Flow",
+					"displayName": "Demo Flow",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.pw.test"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"positionAbsolute": {
+				"x": 30,
+				"y": 30
+			},
+			"selected": false,
+			"dragging": false
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84-Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400-73d11336-80df-4991-ba1a-4bc9ffde6994",
+			"type": "default",
+			"source": "Agama-start-Flow-9cecc8ca-538e-47b4-805e-20775cb9bf84",
+			"target": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400-finish-a051b7bb-abc3-409e-9b59-157f2885bec0-ed5a8e47-dcb5-4e95-9b13-1897ee855cbc",
+			"type": "default",
+			"source": "Agama-log-Node-a46979fb-6182-46c7-acc8-ac4f7b725400",
+			"target": "finish-a051b7bb-abc3-409e-9b59-157f2885bec0",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
+	"viewport": {
+		"x": 10,
+		"y": 216,
+		"zoom": 0.75
+	}
+}

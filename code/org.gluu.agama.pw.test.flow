@@ -1,0 +1,5 @@
+Flow org.gluu.agama.pw.test
+     Basepath ""
+Log "@info just testing"
+it_rxkme = undefined
+Finish it_rxkme

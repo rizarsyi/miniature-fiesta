@@ -1,0 +1,19 @@
+{
+    "projectName": "agama-demo",
+    "description": "Demo purposes only",
+    "type": "community",
+    "author": "maduvena",
+    "version": "0.0.1",
+    "authorWebsite": "https://github.com/rizarsyi/miniature-fiesta",
+    "githubUri": "https://github.com/rizarsyi/miniature-fiesta",
+    "license": "apache-2.0",
+    "lastUpdated": "1715322930697",
+    "tags": [
+        "openid-connect"
+    ],
+    "noDirectLaunch": [],
+    "configs": {
+        "org.gluu.agama.pw.test": {}
+    },
+    "name": "agama-demo"
+}
